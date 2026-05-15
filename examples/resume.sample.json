@@ -1,0 +1,44 @@
+{
+  "name": "Alex Morgan",
+  "title": "Software Engineer",
+  "email": "alex.morgan@example.com",
+  "location": "Austin, TX",
+  "summary": "Engineer with 5+ years building backend systems and developer tooling.",
+  "skills": [
+    "Python",
+    "API Design",
+    "SQL",
+    "Docker",
+    "CI/CD"
+  ],
+  "experience": [
+    {
+      "role": "Senior Software Engineer",
+      "company": "Acme Tech",
+      "start": "2022",
+      "end": "Present",
+      "highlights": [
+        "Led migration of monolith services to modular architecture.",
+        "Improved CI runtime by 35% through pipeline optimization.",
+        "Mentored 4 junior engineers and established code review standards."
+      ]
+    },
+    {
+      "role": "Software Engineer",
+      "company": "Bright Systems",
+      "start": "2019",
+      "end": "2022",
+      "highlights": [
+        "Built internal dashboard used by 50+ support staff.",
+        "Reduced production incidents by introducing observability alerts."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.S. Computer Science",
+      "school": "University of Texas",
+      "year": "2019"
+    }
+  ]
+}
