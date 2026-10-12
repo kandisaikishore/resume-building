@@ -1,40 +1,32 @@
-# Resume Builder
+# Resume Building
 
-A lightweight command-line project that generates a polished Markdown resume from structured JSON input.
+A repository for a resume-building application or set of resume-focused workflows. The current implementation determines the supported editing, template, and export capabilities.
 
-## Features
-- Fill in basic profile details, skills, experience, and education.
-- Generate a clean, readable `resume.md` file.
-- Validate required fields and show helpful error messages.
-- Keep your source data in version control as `resume.json`.
+## Overview
 
-## Project structure
-- `src/resume_builder.py` – main generator logic.
-- `examples/resume.sample.json` – starter input data.
-- `tests/test_resume_builder.py` – basic unit tests.
-- `output/` – generated resumes.
+A useful resume tool should help users structure experience clearly while keeping their information accurate. Document implemented fields, supported formats, and any export options based on the source code.
 
-## Quick start
-1. Generate a resume from the sample data:
-   ```bash
-   python src/resume_builder.py examples/resume.sample.json output/resume.md
-   ```
-2. Open `output/resume.md`.
+## Getting started
 
-## Run tests
 ```bash
-python -m unittest discover -s tests
+git clone https://github.com/saikishore2410/resume-building.git
+cd resume-building
 ```
 
-## Input format
-The input JSON must contain:
-- `name`
-- `title`
-- `email`
-- `location`
-- `summary`
-- `skills` (array)
-- `experience` (array of roles)
-- `education` (array of education items)
+Install dependencies and start the project using the commands defined in the framework configuration.
 
-See `examples/resume.sample.json` for a complete example.
+## Privacy and quality
+
+- Avoid logging resume contents or personal contact information
+- Keep uploaded files and generated content secure
+- Validate export formats and long/empty fields
+- Make clear that suggestions should be reviewed for accuracy
+- Document storage and deletion behaviour
+
+## Contributions
+
+Include reproducible examples for formatting issues and tests for template changes.
+
+## License
+
+No license is specified. Add a `LICENSE` file to define permitted reuse.
