@@ -1,50 +1,44 @@
 # Resume Building
 
-## Live Demo / Deployment URL
+[![Source](https://img.shields.io/badge/Source-GitHub-181717?logo=github)](https://github.com/kandisaikishore/resume-building) [![Last Commit](https://img.shields.io/github/last-commit/kandisaikishore/resume-building)](https://github.com/kandisaikishore/resume-building/commits/main)
 
-**Deployment URL:** Not verified yet. Add the confirmed public application URL here after checking the live service. The repository's GitHub URL is the source code, not a deployed application.
+A resume-focused application project intended to help users organize career information and prepare job-application documents. The actual editing, template, and export capabilities depend on the current implementation.
 
+## Project goals
 
-[![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?logo=github)](https://github.com/saikishore2410/resume-building) [![Issues](https://img.shields.io/github/issues/saikishore2410/resume-building)](https://github.com/saikishore2410/resume-building/issues) [![Last Commit](https://img.shields.io/github/last-commit/saikishore2410/resume-building)](https://github.com/saikishore2410/resume-building/commits/main)
-
-> A repository for a resume-building application or set of resume-focused workflows. The current implementation determines the supported editing, template, and export capabilities.
-
-## At a glance
-
-- **Purpose:** Use the feature and scope sections below to understand the problem this project addresses.
-- **Getting started:** Follow the repository-specific setup instructions and verify commands against the current source and package scripts.
-- **Configuration:** Keep API keys, database credentials, tokens, and private user data out of commits; configure secrets locally.
-- **Quality checks:** Run the available build, test, and lint commands before submitting changes.
-
-
-
-A repository for a resume-building application or set of resume-focused workflows. The current implementation determines the supported editing, template, and export capabilities.
-
-## Overview
-
-A useful resume tool should help users structure experience clearly while keeping their information accurate. Document implemented fields, supported formats, and any export options based on the source code.
+- Organize key resume sections such as experience, education, skills, and projects where supported
+- Encourage clear and consistent presentation of professional information
+- Provide a foundation for resume templates and document output
+- Keep personal information accurate and under the user's control
 
 ## Getting started
 
 ```bash
-git clone https://github.com/saikishore2410/resume-building.git
+git clone https://github.com/kandisaikishore/resume-building.git
 cd resume-building
 ```
 
-Install dependencies and start the project using the commands defined in the framework configuration.
+Install the runtime and dependencies specified by the repository's manifest, then follow the configured start command. Keep private resume data and API credentials out of commits.
 
-## Privacy and quality
+## Quality checklist
 
-- Avoid logging resume contents or personal contact information
-- Keep uploaded files and generated content secure
-- Validate export formats and long/empty fields
-- Make clear that suggestions should be reviewed for accuracy
-- Document storage and deletion behaviour
+- Check required-field validation and editing flows
+- Verify output formatting and exported documents where supported
+- Test long entries and missing optional fields
+- Check responsive layout and keyboard accessibility
+- Avoid collecting or exposing unnecessary personal information
 
-## Contributions
+## Future improvements
 
-Include reproducible examples for formatting issues and tests for template changes.
+- Add clearly named resume sections and reusable templates
+- Provide print-ready output or PDF export if required
+- Add examples and guidance without inventing candidate experience
+- Test import, editing, and export workflows
+
+## Contributing
+
+Open issues with clear reproduction steps. Pull requests should describe the user-facing change and include validation details.
 
 ## License
 
-No license is specified. Add a `LICENSE` file to define permitted reuse.
+No license file is currently declared. Add a `LICENSE` file to define reuse terms.
