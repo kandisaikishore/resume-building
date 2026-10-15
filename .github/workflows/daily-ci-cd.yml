@@ -146,7 +146,7 @@ jobs:
               fi
               python -m pip install pytest httpx
               if find . -type d \( -name .git -o -name .venv -o -name __pycache__ \) -prune -o -type f \( -name 'test_*.py' -o -name '*_test.py' \) -print -quit | grep -q .; then
-                python -m pytest -q --junitxml="$GITHUB_WORKSPACE/reports/pytest-$(echo "$dir" | tr '/.' '--').xml"
+                PYTHONPATH="$GITHUB_WORKSPACE${PYTHONPATH:+:$PYTHONPATH}" python -m PYTHONPATH="$GITHUB_WORKSPACE${PYTHONPATH:+:$PYTHONPATH}" pytest -q --junitxml="$GITHUB_WORKSPACE/reports/pytest-$(echo "$dir" | tr '/.' '--').xml"
               else
                 python -m compileall -q .
               fi
