@@ -36,7 +36,7 @@ jobs:
         run: |
           set -e
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-          if [ -d tests ] || find . -maxdepth 2 -name 'test_*.py' -print -quit | grep -q .; then pip install pytest; pytest -q
+          if [ -d tests ] || find . -maxdepth 2 -name 'test_*.py' -print -quit | grep -q .; then pip install pytest; PYTHONPATH="$GITHUB_WORKSPACE${PYTHONPATH:+:$PYTHONPATH}" PYTHONPATH="$GITHUB_WORKSPACE${PYTHONPATH:+:$PYTHONPATH}" pytest -q
           else echo "No Python tests found."; fi
       - name: Node tests and build
         shell: bash
